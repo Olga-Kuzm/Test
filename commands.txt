@@ -1,0 +1,59 @@
+Install Git
+Set up a GitHub account (if you don't have it yet)
+Create a new GitHub repo 
+Setup Github ssh connection (generate a key, update account settings, etc) 
+------------ ssh-keygen -t rsa -C "accoumn name"------------------------
+
+Configure author name and email use the git config command
+----------- git config --global user.email "email"------------------------
+------------git config --global user.name "name"-------------------------
+
+In your local drive create a folder for the mentoring tasks project, create git_task_1 subfolder for this task, and README.MD file inside it. 
+
+Think up and write the fake project description (title, description, setup, etc) using Github markdown
+Init your local repository using the git init command
+------------git init----------------------------------
+
+Set a new remote via git remote add origin command, check git status
+--------------------git remote add origin [url]--------------------
+--------------------git status---------------------------------
+
+Add a change in the working directory to the staging area using the git add command, check git status
+------------------------git add . -------------------------------------------------
+------------------------git status ------------------------------------------
+
+Create the first commit with a meaningful message using the git commit command, check git status
+------------------git commit -m "description"-------------------------------------
+------------------git status------------------------------------------------
+
+Push the updates to Github, check git status
+-----------git push----------------------
+------------git status------------------
+Update README.MD shows the difference using the git diff command.
+-------------git diff-----------------------
+
+Add changes to staging again
+----------git add . ------------------------------
+---------git commit -m "description"-------------
+----------git push----------------
+
+Show the difference between the working directory and local HEAD
+-------------git diff HEAD-----------------
+
+Edit the README.MD file via Github web editor, pull the changes to the local repo via git pull command.
+-------------git pull ----------------------------------
+
+Update README.MD, rollback changes from the head.
+---------get reset HEAD--------------
+
+
+Download commits using the git fetch command, check the status
+------git fetch-----------
+------git status----------
+
+Show logs
+-----------git log---------------
+
+Using .gitignore file ignore all .bak, .log, .tmp files and 'DEBUG' folder, push the file to remote repo
+-----------------------------
+
