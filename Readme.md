@@ -5,5 +5,5 @@ Some type of test project :)
 
 ### Setup
 
-~~Just download and run~~
+~~Just download and run :) ~~
 
