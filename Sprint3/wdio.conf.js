@@ -211,12 +211,15 @@ exports.config = {
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
      */
-    // beforeSuite: function (suite) {
-    // },
+    beforeSuite: async function (suite) {
+        await browser.maximizeWindow();
+        await browser.url(`https://automationteststore.com/`);
+    },
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
     // beforeTest: function (test, context) {
+        
     // },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
