@@ -1,5 +1,5 @@
-const { Login } = require("../PO/login.po");
-const { Base } = require('../PO/base.po')
+const { Login } = require("../pageobjects/login.po");
+const { Base } = require('../pageobjects/base.po')
 
 describe('Login positive', ()=>{    
     it('should log in', async ()=>{    
