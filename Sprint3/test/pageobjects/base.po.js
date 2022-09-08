@@ -15,15 +15,13 @@ class Base {
             }     
         })
     }
-
     async moveOnMenuWithText (text){
         await $$(this.categoryMenu).map( async elem=>{
             if( await elem.getText()==='  '+text){
                  await elem.moveTo()
             } 
         })
-    }
-    
+    }    
 }
 
 

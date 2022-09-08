@@ -15,9 +15,7 @@ class Ruby {
             }     
         })        
         await this.addToCartButton.click();
-
     }
-
 }
 
 

@@ -1,8 +1,7 @@
 class Search {
     get searchBar(){
         return $('#filter_keyword')
-    }
-    
+    }    
     get searchCategories(){
         return '.search-category'
     }
@@ -28,9 +27,7 @@ class Search {
     })
         await this.searchBar.setValue(text);
         await this.searchButton.click()
-}
-
-    
+}    
 }
 
 module.exports = {Search: new Search}

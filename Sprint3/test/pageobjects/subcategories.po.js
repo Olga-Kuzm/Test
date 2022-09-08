@@ -4,9 +4,7 @@ class Sub {
     }
     get tSorts (){
         return  $('//*[contains(text(), "T-shirts")]')
-    }
-
-   
+    }   
 }
 
 module.exports = { Sub : new Sub}

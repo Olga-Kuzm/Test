@@ -13,8 +13,7 @@ class Cart {
     }
     get shoppingCart(){
         return $('.contentpanel')
-    }
-    
+    }    
 }
 
 

@@ -29,6 +29,5 @@ describe('Shopping cart flow', ()=>{
             await Cart.cartUpdateButton.click();
             expect (await Cart.shoppingCart.getText()).toBe('Your shopping cart is empty!\nContinue')
         })
-
     })
 })
