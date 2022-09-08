@@ -8,7 +8,7 @@ class Base {
         return ('//nav/ul/*')
     }
 
-    async clickOnMenu(text){
+    async clickOnMenuWithText (text){
         await $$(this.categoryMenu).map( async elem=>{
             if( await elem.getText()==='  '+text){
                  await elem.click()
@@ -16,7 +16,7 @@ class Base {
         })
     }
 
-    async moveToMenu(text){
+    async moveOnMenuWithText (text){
         await $$(this.categoryMenu).map( async elem=>{
             if( await elem.getText()==='  '+text){
                  await elem.moveTo()

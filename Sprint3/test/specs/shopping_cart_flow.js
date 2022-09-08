@@ -15,10 +15,10 @@ describe('Shopping cart flow', ()=>{
             await Login.login({username: "loginname", password: "password"})
         })
         it ('should add goods to cart', async()=>{
-            await Base.moveToMenu('APPAREL & ACCESSORIES');
+            await Base.moveOnMenuWithText('APPAREL & ACCESSORIES');
             await Sub.shoes.click();
             await Shoes.item3.click();            
-            await Ruby.chooseoption('UK 6 / White');
+            await Ruby.chooseOption('UK 6 / White');
             expect(await Cart.itemName.getText()).toBe('Ruby Shoo Womens Jada T-Bar');
             expect(await Cart.sizeName.getText()).toBe('Color&Size UK 6 / White')
         })

@@ -8,7 +8,7 @@ class Ruby {
     get addToCartButton (){
         return $('.cart')
     }
-    async chooseoption(size){
+    async chooseOption(size){
         await $$(this.sizeOption).map( async elem=>{
             if( await elem.getText()===size){
                  await elem.click()
@@ -17,10 +17,6 @@ class Ruby {
         await this.addToCartButton.click();
 
     }
-
-
-
-
 
 }
 
