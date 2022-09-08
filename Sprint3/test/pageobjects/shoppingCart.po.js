@@ -6,15 +6,14 @@ class Cart {
         return $('.align_left small')
     }
     get cartQuantity (){
-        return $('input#cart_quantity117c392653d989af6c2fb05fa89d0ad4da9')
+        return $("input[id*='cart_quantity']")
     }
     get cartUpdateButton (){
         return $('#cart_update')
     }
     get shoppingCart(){
         return $('.contentpanel')
-    }
-    
+    }    
 }
 
 
